@@ -23,9 +23,6 @@ export default class GameScene extends Phaser.Scene {
     this.GO = {};
     //this.GO["Logo_Image"] = this.add.image(width / 2, height / 2, "logo").setOrigin(0.5, 0.5);
     //this.GO["Player"] = this.add.sprite(0, game.height, 'mummy');
-    console.log(Phaser);
-    console.log(this.game.config);
-    console.log(width);
     this.cursor = this.input.keyboard.createCursorKeys();
     this.jumpButton = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.SPACE
