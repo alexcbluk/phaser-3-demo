@@ -8,21 +8,14 @@ export default class GameScene extends Phaser.Scene {
   preload() {
     // load images
     this.load.image("logo", "src/assets/logo.png");
-    this.load.spritesheet(
-      "mummy",
-      "assets/sprites/metalslug_mummy37x45.png",
-      37,
-      45,
-      18
-    );
   }
 
   create() {
     const { width, height } = this.game.config;
 
     this.GO = {};
-    //this.GO["Logo_Image"] = this.add.image(width / 2, height / 2, "logo").setOrigin(0.5, 0.5);
-    //this.GO["Player"] = this.add.sprite(0, game.height, 'mummy');
+    this.GO["Logo_Image"] = this.add.image(width / 2, height / 2, "logo").setOrigin(0.5, 0.5);
+
     this.cursor = this.input.keyboard.createCursorKeys();
     this.jumpButton = this.input.keyboard.addKey(
       Phaser.Input.Keyboard.KeyCodes.SPACE
