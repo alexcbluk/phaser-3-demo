@@ -6,11 +6,16 @@ export default class Boot extends Phaser.Scene {
   }
 
   preload() {
-    console.log("Boot.js preload()");
     this.load.image("logo", "src/assets/logo.png");
+    //GameConfig JSON...
+    //Language JSON...
   }
 
   create() {
-    this.scene.start("Preloader");
+    //Initialise any 3rd party API
+    // - Server side: AWS
+    // - Platform specific: Facebook Instant Game
+
+    this.scene.start("Title");
   }
 }
